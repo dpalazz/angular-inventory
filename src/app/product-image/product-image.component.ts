@@ -1,6 +1,9 @@
-import { Component, Input, HostBinding } from '@angular/core';
-
-import { Product } from'../product.model'
+import {
+  Component,
+  Input,
+  HostBinding
+} from '@angular/core';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'product-image',
