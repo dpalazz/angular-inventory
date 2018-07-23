@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
+
+import { Product } from'../product.model'
 
 @Component({
-  selector: 'app-product-image',
-  templateUrl: './product-image.component.html',
-  styleUrls: ['./product-image.component.css']
+  selector: 'product-image',
+  template: `
+  <img class="product-image" [src]="product.imageUrl">
+  `
 })
 export class ProductImageComponent {
-
-  constructor() { }
-
+  @Input() product: Product;
+  @HostBinding('attr.class') cssClass = 'ui small image';
 }

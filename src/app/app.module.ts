@@ -11,7 +11,8 @@ import { ProductImageComponent } from './product-image/product-image.component';
     AppComponent,
     ProductsListComponent,
     ProductRowComponent,
-    ProductImageComponent
+    ProductImageComponent,
+    ProductDisplayComponent
   ],
   imports: [
     BrowserModule
