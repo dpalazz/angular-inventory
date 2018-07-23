@@ -1,11 +1,15 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output
+} from '@angular/core';
 
-import { Product } from '../product.model'
+import { Product } from '../product.model';
 
 @Component({
   selector: 'products-list',
-  templateUrl: './products-list.component.html',
-  styleUrls: ['./products-list.component.css']
+  templateUrl: './products-list.component.html'
 })
 export class ProductsListComponent {
   @Input() productList: Product[];
@@ -29,4 +33,5 @@ export class ProductsListComponent {
     }
     return product.sku === this.currentProduct.sku;
   }
+
 }

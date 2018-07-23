@@ -14,7 +14,6 @@ import { ProductDepartmentComponent } from './product-department/product-departm
     ProductsListComponent,
     ProductRowComponent,
     ProductImageComponent,
-    ProductDisplayComponent,
     PriceDisplayComponent,
     ProductDepartmentComponent
   ],
